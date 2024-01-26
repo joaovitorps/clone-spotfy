@@ -1,0 +1,6 @@
+:root {
+  /* font */
+  --font-circular-sp: "CircularSp", sans-serif;
+  --font-size-medium: 16px;
+  --full-border-radius: 9999px;
+}

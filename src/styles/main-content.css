@@ -1,0 +1,124 @@
+.main-container {
+  grid-row: 1;
+  grid-column: 2--full-border-radius8px;
+  background-color: #121212;
+  padding: 0 15px;
+}
+
+.main-container .header__navigation {
+}
+
+.header__navigation .nagation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nagation .nagation__buttons {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+}
+
+.arrow-left,
+.arrow-right {
+  display: flex;
+  /* align-self: center;
+  justify-content: center; */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* opacity: .6; */
+  border-radius: var(--full-border-radius);
+  padding: 10px;
+}
+
+.arrow-left svg,
+.arrow-right svg {
+  width: 16px;
+  height: 16px;
+  fill: #9e9e9f;
+}
+
+/* .nagation__buttons .arrow-left {
+  margin-right: 1.23rem;
+} */
+
+.nagation .header__search {
+  display: flex;
+  align-items: center;
+  background-color: #000000b3;
+  padding: 15px;
+  border-radius: var(--full-border-radius);
+  width: 55%;
+}
+
+.header__search .search-icon {
+  margin-right: 10px;
+}
+
+.header__search .search-input,
+.header__search .search-input input {
+  background-color: transparent;
+  width: 100%;
+  color: #fff;
+}
+
+.nagation .header__account {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.header__account .sign-up__button {
+  background-color: transparent;
+  color: #a7a7a7;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.header__account .log-in__button {
+  border-radius: var(--full-border-radius);
+  padding: 15px 30px;
+  font-weight: bold;
+}
+
+.main-container .body__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+  padding: 30px 15px 0;
+  height: 100%;
+  font-weight: bold;
+}
+
+.body__content .title {
+  font-size: 50px;
+}
+
+.body__content .subtitle {
+  font-size: 30px;
+}
+
+.offer__scroll-container {
+  max-height: 43vh;
+  margin: 24px;
+  overflow-y: auto;
+}
+
+.offer__list-item {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 200px;
+  width: 220px;
+  background-color: aqua;
+}
+

@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify - Web Player: Music for everyone</title>
     <link rel="stylesheet" href="src/styles/reset.css" />
+    <link rel="stylesheet" href="src/styles/vars.css" />
     <link rel="stylesheet" href="src/styles/sidebar-footer.css" />
+    <link rel="stylesheet" href="src/styles/main-content.css" />
+    <link rel="stylesheet" href="src/styles/media-queries.css" />
     <!-- <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
@@ -191,7 +194,90 @@
           </div>
         </footer>
       </div>
-      <div class="main">asd</div>
+      <main class="main-container">
+        <nav class="header__navigation">
+          <div class="nagation">
+            <div class="nagation__buttons">
+              <div>
+                <button class="arrow-left">
+                  <svg
+                    aria-hidden="true"
+                    class="arrow-left-svg"
+                    data-encore-id="icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div>
+                <button class="arrow-right">
+                  <svg
+                    aria-hidden="true"
+                    class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF"
+                    data-encore-id="icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="header__search">
+              <div class="search-icon">
+                <img src="/src/assets/icons/search.png" alt="" />
+              </div>
+              <div class="search-input">
+                <input
+                  type="text"
+                  name=""
+                  id="search-input"
+                  maxlength="800"
+                  placeholder="What do you wanna hear?"
+                  onfocus=""
+                />
+              </div>
+            </div>
+            <div class="header__account">
+              <div>
+                <button class="sign-up__button">
+                  <span>Sign up</span>
+                </button>
+              </div>
+              <div>
+                <button class="log-in__button">
+                  <span>Log in</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="body__content">
+          <div class="title">
+            <p>Good afternoon</p>
+          </div>
+          <div class="subtitle">
+            <p>Check all sections</p>
+          </div>
+          <div class="offer__scroll-container">
+            <section class="offer__list-item">
+              <div class="card">a</div>
+              <div class="card">a</div>
+              <div class="card">a</div>
+              <div class="card">a</div>
+              <div class="card">a</div>
+              <div class="card">a</div>
+              <div class="card">a</div>
+              <div class="card">a</div>
+              <div class="card">a</div>
+            </section>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>

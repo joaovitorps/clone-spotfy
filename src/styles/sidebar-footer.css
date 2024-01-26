@@ -1,7 +1,7 @@
 body {
   background-color: #000;
-  font-family: "CircularSp", sans-serif;
-  font-size: 16px;
+  font-family: var(--font-circular-sp);
+  font-size: var(font-size-medium);
 }
 
 a,
@@ -18,25 +18,31 @@ button {
   right: 0;
   bottom: 0;
   padding: 8px;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 300px 1fr;
   grid-template-rows: 1fr;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: scroll;
 }
 
 .layout .sidebar {
   display: flex;
   flex-direction: column;
+  grid-row: 1;
+  grid-column: 1;
+  border-radius: 8px;
+  background-color: #121212;
 }
 
 .sidebar__content {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  height: 100%;
 }
 
 .sidebar-nav-link__card {
-  border-radius: 8px;
-  background-color: #121212;
+  /* border-radius: 8px;
+  background-color: #121212; */
 }
 
 .sidebar-nav-link__card .logo {
@@ -81,8 +87,8 @@ button {
 .sidebar-info__card {
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
-  background-color: #121212;
+  /* border-radius: 8px;
+  background-color: #121212; */
 }
 
 .sidebar-info__card .library {
@@ -261,11 +267,4 @@ footer .footer__content {
   border-radius: 50px;
   padding: 15px 30px;
   font-weight: bold;
-}
-
-.layout .main {
-  grid-row: 1;
-  grid-column: 2;
-  border-radius: 8px;
-  background-color: #121212;
 }
