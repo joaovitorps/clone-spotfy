@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify - Web Player: Music for everyone</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
@@ -24,28 +24,169 @@
   </head>
 
   <body>
-    <div class="sidebar">
-      <nav class="sidebar__navigations">
-        <div class="logo">
-          <a href="">
-            <img src="assets/icons/logo-spotify.png" alt="Spotify logo" />
-          </a>
-          <ul>
-            <li>
+    <div class="layout">
+      <div class="sidebar">
+        <nav class="sidebar__content">
+          <div class="sidebar-nav-link__card">
+            <div class="logo">
               <a href="">
-                <span class="fa fa-home"></span>
-                <span>Home</span>
+                <img src="assets/icons/logo-spotify.png" alt="Spotify logo" />
               </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="fa fa-search"></span>
-                <span>Search</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+            </div>
+            <ul>
+              <li>
+                <a href="">
+                  <span class="fa fa-home"></span>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="fa fa-search"></span>
+                  <span>Search</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-info__card">
+            <div class="library">
+              <header class="library__header">
+                <button class="library__button">
+                  <span class="fa fa-book"></span>
+                  <span>Your Library</span>
+                </button>
+                <button class="plus__button">
+                  <span class="fa fa-plus"></span>
+                </button>
+              </header>
+              <div class="library__sections">
+                <section class="library__sections__content">
+                  <span class="text title">Create your first playlist</span>
+                  <span class="text subtitle">It's easy, we'll help you</span>
+                  <button
+                    class="sidebar-section__button create-playlist__button"
+                  >
+                    <span>Create playlist</span>
+                  </button>
+                </section>
+                <section class="library__sections__content">
+                  <span class="text title"
+                    >Let's find some podcasts to follow</span
+                  >
+                  <span class="text subtitle"
+                    >We'll keep you updated on new episodes</span
+                  >
+                  <button
+                    class="sidebar-section__button browse-podcast__button"
+                  >
+                    <span>Browse podcasts</span>
+                  </button>
+                </section>
+                <div></div>
+              </div>
+            </div>
+            <div class="sidebar-footer__content">
+              <div class="sidebar-footer__links">
+                <div class="link">
+                  <a href="https://www.spotify.com/us/legal/"
+                    ><span>Legal</span></a
+                  >
+                </div>
+                <div class="link">
+                  <a href="https://www.spotify.com/us/privacy/"
+                    ><span>Privacy Center</span></a
+                  >
+                </div>
+                <div class="link">
+                  <a href="https://www.spotify.com/us/legal/privacy-policy/"
+                    ><span>Privacy Policy</span></a
+                  >
+                </div>
+                <div class="link">
+                  <a href="https://www.spotify.com/us/legal/cookies-policy/"
+                    ><span>Cookies</span></a
+                  >
+                </div>
+                <div class="link">
+                  <a href="https://www.spotify.com/us/legal/privacy-policy/#s3"
+                    ><span>About Ads</span></a
+                  >
+                </div>
+                <div class="link">
+                  <a href="https://www.spotify.com/us/accessibility/"
+                    ><span>Accessibility</span></a
+                  >
+                </div>
+                <div class="link">
+                  <a
+                    href="https://www.spotify.com/us/legal/notice-at-collection/"
+                    ><span>Notice at Collection</span></a
+                  >
+                </div>
+                <div class="link privacy-choices-link">
+                  <a href="">
+                    <span>Your Privacy Choices</span>
+                  </a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xml:space="preserve"
+                    viewBox="0 0 30 14"
+                    aria-labelledby="ccpa-svg-title"
+                    style="width: 25px; padding-left: 4px; padding-bottom: 4px"
+                  >
+                    <title id="ccpa-svg-title">
+                      California Consumer Privacy Act (CCPA) Opt-Out Icon
+                    </title>
+                    <path
+                      d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z"
+                      style="
+                        fill-rule: evenodd;
+                        clip-rule: evenodd;
+                        fill: rgb(255, 255, 255);
+                      "
+                    ></path>
+                    <path
+                      d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z"
+                      style="
+                        fill-rule: evenodd;
+                        clip-rule: evenodd;
+                        fill: rgb(0, 102, 255);
+                      "
+                    ></path>
+                    <path
+                      d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z"
+                      style="fill: rgb(255, 255, 255)"
+                    ></path>
+                    <path
+                      d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z"
+                      style="fill: rgb(0, 102, 255)"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="sidebar-footer__languages">
+                <button class="languages__button">
+                  <span class="fas fa-globe"></span>
+                  <span>English</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="footer">
+        <footer class="footer__content">
+          <section class="footer__section">
+            <span class="title">Preview of Spotify</span>
+            <span class="subtitle"
+              >Sign up to get unlimited songs and podcasts with occasional ads.
+              No credit card needed.</span
+            >
+          </section>
+          <button class="footer__button">asd</button>
+        </footer>
+      </div>
+      <div class="main">asd</div>
     </div>
   </body>
 </html>
