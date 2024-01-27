@@ -6,8 +6,11 @@
     <title>Spotify - Web Player: Music for everyone</title>
     <link rel="stylesheet" href="src/styles/reset.css" />
     <link rel="stylesheet" href="src/styles/vars.css" />
+
     <link rel="stylesheet" href="src/styles/sidebar-footer.css" />
     <link rel="stylesheet" href="src/styles/main-content.css" />
+    <link rel="stylesheet" href="src/styles/artists.css" />
+
     <link rel="stylesheet" href="src/styles/media-queries.css" />
     <!-- <link
       rel="stylesheet"
@@ -238,7 +241,6 @@
                   id="search-input"
                   maxlength="800"
                   placeholder="What do you wanna hear?"
-                  onfocus=""
                 />
               </div>
             </div>
@@ -257,27 +259,32 @@
           </div>
         </nav>
         <div class="body__content">
-          <div class="title">
-            <p>Good afternoon</p>
+          <div class="playlists-and-greetings" id="result-playlist">
+            <div class="title">
+              <p>Good afternoon</p>
+            </div>
+            <div class="subtitle">
+              <p>Check all sections</p>
+            </div>
+            <div class="offer__scroll-container">
+              <section class="offer__list-item">
+                <div class="card">a</div>
+                <div class="card">a</div>
+                <div class="card">a</div>
+                <div class="card">a</div>
+                <div class="card">a</div>
+                <div class="card">a</div>
+                <div class="card">a</div>
+                <div class="card">a</div>
+                <div class="card">a</div>
+              </section>
+            </div>
           </div>
-          <div class="subtitle">
-            <p>Check all sections</p>
-          </div>
-          <div class="offer__scroll-container">
-            <section class="offer__list-item">
-              <div class="card">a</div>
-              <div class="card">a</div>
-              <div class="card">a</div>
-              <div class="card">a</div>
-              <div class="card">a</div>
-              <div class="card">a</div>
-              <div class="card">a</div>
-              <div class="card">a</div>
-              <div class="card">a</div>
-            </section>
-          </div>
+          <div class="result-artists hidden" id="result-artists"></div>
+          <div class="hidden" id="no-results">No results found</div>
         </div>
       </main>
     </div>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
