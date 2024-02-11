@@ -12,14 +12,12 @@
     <link rel="stylesheet" href="src/styles/artists.css" />
 
     <link rel="stylesheet" href="src/styles/media-queries.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
-    /> -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
-    /> -->
+    <link
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+      href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -33,40 +31,46 @@
     <div class="layout">
       <div class="sidebar">
         <nav class="sidebar__content">
-          <div class="sidebar-nav-link__card">
-            <div class="logo">
-              <a href="">
-                <img
-                  src="src/assets/icons/logo-spotify.png"
-                  alt="Spotify logo"
-                />
-              </a>
+          <div class="sidebar__card">
+            <div class="nav-link__content">
+              <div class="logo">
+                <a href="">
+                  <img
+                    src="src/assets/icons/logo-spotify.png"
+                    alt="Spotify logo"
+                  />
+                </a>
+              </div>
+              <ul>
+                <li>
+                  <a href="">
+                    <span class="fa fa-home"></span>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="fa fa-search"></span>
+                    <span>Search</span>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <ul>
-              <li>
-                <a href="">
-                  <span class="fa fa-home"></span>
-                  <span>Home</span>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <span class="fa fa-search"></span>
-                  <span>Search</span>
-                </a>
-              </li>
-            </ul>
           </div>
-          <div class="sidebar-info__card">
+          <div class="sidebar__card">
             <div class="library">
               <header class="library__header">
-                <button class="library__button">
-                  <span class="fa fa-book"></span>
-                  <span>Your Library</span>
-                </button>
-                <button class="plus__button">
-                  <span class="fa fa-plus"></span>
-                </button>
+                <div>
+                  <button class="library__button">
+                    <span class="fa fa-book"></span>
+                    <span>Your Library</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="plus__button">
+                    <span class="fa fa-plus"></span>
+                  </button>
+                </div>
               </header>
               <div class="library__sections">
                 <section class="library__sections__content">
@@ -91,7 +95,6 @@
                     <span>Browse podcasts</span>
                   </button>
                 </section>
-                <div></div>
               </div>
             </div>
             <div class="sidebar-footer__content">
@@ -172,6 +175,11 @@
                     ></path>
                   </svg>
                 </div>
+              </div>
+              <div class="cookies_link link">
+                <a href="https://www.spotify.com/us/legal/cookies-policy/"
+                  ><span>Cookies</span></a
+                >
               </div>
               <div class="sidebar-footer__languages">
                 <button class="languages__button">
@@ -261,7 +269,7 @@
         <div class="body__content">
           <div class="playlists-and-greetings" id="result-playlist">
             <div class="title">
-              <p>Good afternoon</p>
+              <p>Spotfy Playlist</p>
             </div>
             <div class="subtitle">
               <p>Check all sections</p>

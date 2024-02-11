@@ -1,6 +1,12 @@
 {
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "eslint": "^8.56.0",
-    "json-server": "^0.17.4"
+    "json": "^11.0.0",
+    "live-server": "^1.2.2",
+    "server": "^1.0.38"
+  },
+  "scripts": {
+    "start": "concurrently \"live-server\" \"npx json-server api-artists/artists.json\""
   }
 }

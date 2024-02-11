@@ -12,17 +12,11 @@
 
 @media screen and (min-width: 1415px) {
   .offer__list-item {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .offer__list-item {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
-@media screen and (min-width: 2133px) {
+@media screen and (min-width: 1920px) {
   .offer__list-item {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
